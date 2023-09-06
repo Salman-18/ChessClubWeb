@@ -14,28 +14,37 @@ if menu == "Home":
         {"name": "ishaque nizamani", "rating": 1388},
         {"name": "ammar nizamani", "rating": 1883},
         {"name": "hamid nizamani", "rating" : 1632},
-        {"name": "salman nizamani", "rating": 832}
+        {"name": "salman nizamani", "rating": 832},
+        {"name": "sarwan nizamani", "rating": 409},
+        {"name": "zarar nizamani", "rating": 1414},
+        {"name": "umar nizamani", "rating": 938}
         # Add more player data streamlit run d:/ChessClubWeb/app.py
     ]
+ 
+
     for player in player_data:
         st.write(f"**{player['name']}**")
         image_path = f"assets/{player['name']}.jpg"
-        st.image(image_path, width=128, caption=player['name'])
+        st.image(image_path, width=200, caption=player['name'])
         st.write(f"Rating: {player['rating']}")
+
 # Rating Section
 elif menu == "Rating":
-    st.title("Player Ratings")
-    players_data = [
+        st.title("Player Ratings")
+        players_data = [
         {"name": "ishaque nizamani", "rating": 1388},
         {"name": "ammar nizamani", "rating": 1883},
         {"name": "hamid nizamani", "rating" : 1632},
-        {"name": "salman nizamani", "rating": 832}
+        {"name": "salman nizamani", "rating": 832},
+        {"name": "sarwan nizamani", "rating": 409},
+        {"name": "zarar nizamani", "rating": 1414},
+        {"name": "umar nizamani", "rating": 938}
 #Add more player data
     ]
 
-    rating_data = {player['name']: player['rating'] for player in players_data}
+        rating_data = {player['name']: player['rating'] for player in players_data}
         
-    st.table({"Name": list(rating_data.keys()), "Rating": list(rating_data.values())})
+        st.table({"Name": list(rating_data.keys()), "Rating": list(rating_data.values())})
 
 # About Section
 else:
