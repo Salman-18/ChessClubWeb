@@ -17,7 +17,8 @@ if menu == "Home":
         {"name": "salman nizamani", "rating": 832},
         {"name": "sarwan nizamani", "rating": 409},
         {"name": "zarar nizamani", "rating": 1414},
-        {"name": "umar nizamani", "rating": 938}
+        {"name": "umar nizamani", "rating": 938},
+        {"name": "Mali", "rating": 855}
         # Add more player data streamlit run d:/ChessClubWeb/app.py
     ]
  
@@ -38,7 +39,8 @@ elif menu == "Rating":
         {"name": "salman nizamani", "rating": 832},
         {"name": "sarwan nizamani", "rating": 409},
         {"name": "zarar nizamani", "rating": 1414},
-        {"name": "umar nizamani", "rating": 938}
+        {"name": "umar nizamani", "rating": 938},
+        {"name": "Mali", "rating": 855},
 #Add more player data
     ]
 
