@@ -45,7 +45,6 @@ elif menu == "Rating":
     ]
 
         rating_data = {player['name']: player['rating'] for player in players_data}
-        
         st.table({"Name": list(rating_data.keys()), "Rating": list(rating_data.values())})
 
 # About Section
